@@ -1,9 +1,17 @@
 package com.example.project;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class ShapeHierarchy {
     public static void main(String[] args) {
-        // TODO: create a list/array of shapes and print each area (polymorphism)
+        List<Shape> shapes = new ArrayList<>();
+        shapes.add(new Circle(3));
+        shapes.add(new Rectangle(2, 5));
+        shapes.add(new Triangle(4, 6));
+
+        for (Shape shape : shapes) {
+            System.out.println("Area: " + shape.getArea());
+        }
     }
 }

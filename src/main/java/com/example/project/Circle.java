@@ -1,15 +1,15 @@
 package com.example.project;
 
 public class Circle implements Shape {
-    // TODO: add fields as needed
+    private double radius;
 
     public Circle(double radius) {
-        // TODO: store parameter(s)
+        // Edge case: negative dimensions are treated as 0
+        this.radius = Math.max(0, radius);
     }
 
     @Override
     public double getArea() {
-        // TODO: compute and return area
-        return 0;
+        return Math.PI * radius * radius;
     }
 }
