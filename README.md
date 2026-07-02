@@ -4,7 +4,6 @@ Minimal starter: just enough to compile. Implement the classes so tests pass.
 
 ## Run tests
 ```bash
-./gradlew test     # macOS/Linux
 gradlew.bat test   # Windows
 ```
 

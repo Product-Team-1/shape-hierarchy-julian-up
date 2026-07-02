@@ -1,15 +1,17 @@
 package com.example.project;
 
 public class Triangle implements Shape {
-    // TODO: add fields as needed
+    private double base;
+    private double height;
 
     public Triangle(double base, double height) {
-        // TODO: store parameter(s)
+        // Edge case: negative dimensions are treated as 0
+        this.base = Math.max(0, base);
+        this.height = Math.max(0, height);
     }
 
     @Override
     public double getArea() {
-        // TODO: compute and return area
-        return 0;
+        return (base * height) / 2;
     }
 }
